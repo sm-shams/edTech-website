@@ -180,7 +180,10 @@
       <!-- Slider End ---->
     </header>
     <main class="container">
-      <div class="grid-title text-center" style="margin-top: 130px; margin-bottom: 40px;">
+      <div
+        class="grid-title text-center"
+        style="margin-top: 130px; margin-bottom: 40px"
+      >
         <h1 style="color: rgba(0, 0, 0, 0.76); font-size: 50px">
           Get Started Digital <br />
           Learning
@@ -405,6 +408,97 @@
           </div>
         </div>
       </div>
+
+      <!------------------------- Ready to Join Section ----------------------------->
+      <section
+        class="container bg-primary opacity-75 rounded-2"
+        style="margin: 130px 0"
+      >
+        <div
+          class="ready-to-join d-flex flex-column flex-sm-column flex-md-row justify-content-sm-center justify-content-md-around align-items-center"
+          style="padding: 70px 0px"
+        >
+          <div
+            class="me-5 text-center text-sm-center text-md-start text-lg-start text-xl-start"
+          >
+            <h1
+              class="text-white text-center text-sm-center text-md-start text-lg-start text-xl-start"
+            >
+              Ready to join?
+            </h1>
+
+            <div class="">
+              <p class="text-white">
+                It is a long established fact that a reader will be distracted
+                by the <br />
+                readable content of a page when looking at its layout.
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary fs-2 fw-bold border border-white border-3 rounded-4"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="@mdo"
+          >
+            Register
+          </button>
+        </div>
+      </section>
+
+      <!-- modal call up function start -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label"
+                    >Recipient:</label
+                  >
+                  <input type="text" class="form-control" id="recipient-name" />
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label"
+                    >Message:</label
+                  >
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Send message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal call up function end -->
     </main>
 
     <script
